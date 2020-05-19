@@ -88,7 +88,7 @@ class _HomeState extends State<Home> {
                         fontSize: 12, color: Colors.redAccent),
                   ),
                   Text(
-                    countdown,
+                    '$countdown' ?? 'Ready to launch',
                     style: GoogleFonts.sourceCodePro(fontSize: 50),
                   ),
                   Text(
@@ -108,6 +108,7 @@ class _HomeState extends State<Home> {
                 ),
               ),
             ),
+            Text('Launching....'),
           ],
         ),
       ),
